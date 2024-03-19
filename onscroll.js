@@ -7,11 +7,11 @@ function isDesktop() {
 
 if (isDesktop()) {
   // Select all elements with the data attribute ani-mate
-  const elementsToAnimate = document.querySelectorAll('[data-ani-mate="right"], [data-ani-mate="left"], [data-ani-mate="bottom"]');
+  const elementsToAnimate = document.querySelectorAll('[data-animate="right"], [data-animate="left"], [data-animate="bottom"]');
 
   elementsToAnimate.forEach((element) => {
     // Determine the direction based on the data attribute
-    const direction = element.getAttribute('data-ani-mate');
+    const direction = element.getAttribute('data-animate');
     let startPositionX = 0; // Horizontal start position (for left/right)
     let startPositionY = 0; // Vertical start position (for bottom)
 
